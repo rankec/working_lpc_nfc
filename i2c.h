@@ -14,11 +14,17 @@
 #define STOPI2C		I2C_I2CONCLR = SIC; I2C_I2CONSET=STO; while((I2C_I2CONSET&STO));
 
 void i2c_init();
+
 static void wait_for_SI(void);
+
 int i2c_Start(int addr);
+
 int i2c_Write(unsigned char *buf, unsigned count);
+
 int i2c_Read();
+
 int i2c_ReadLast();
+
 void i2c_Stop(void);
 
 #endif

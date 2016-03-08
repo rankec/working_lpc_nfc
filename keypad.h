@@ -2,6 +2,8 @@
     The keypad driver.
 */
 
+#ifndef _KEYPAD_H
+#define _KEYPAD_H
 
 #include "gpio.h"
 
@@ -27,3 +29,5 @@ typedef enum {
 void Keypad_Init();
 
 char Keypad_WaitAndGetKey();
+
+#endif
